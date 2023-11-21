@@ -53,13 +53,13 @@
 					"mode": "formdata",
 					"formdata": [
 						{
-							"key": "note1",
-							"value": "11111",
+							"key": "notename",
+							"value": "goal",
 							"type": "text"
 						},
 						{
-							"key": "note2",
-							"value": "22222",
+							"key": "notee",
+							"value": "ggg",
 							"type": "text"
 						}
 					]
@@ -69,16 +69,16 @@
 			"response": []
 		},
 		{
-			"name": "/notes/note1",
+			"name": "/notes/notename",
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": "http://localhost:8000/notes/11111"
+				"url": "http://localhost:8000/notes/goal"
 			},
 			"response": []
 		},
 		{
-			"name": "/notes/note1",
+			"name": "/notes/notename",
 			"request": {
 				"method": "PUT",
 				"header": [],
@@ -86,19 +86,18 @@
 					"mode": "raw",
 					"raw": "DD"
 				},
-				"url": "http://localhost:8000/notes/11111"
+				"url": "http://localhost:8000/notes/goal"
 			},
 			"response": []
 		},
 		{
-			"name": "/notes/note1",
+			"name": "/notes/notename",
 			"request": {
 				"method": "DELETE",
 				"header": [],
-				"url": "http://localhost:8000/notes/11111"
+				"url": "http://localhost:8000/notes/goal"
 			},
 			"response": []
 		}
 	]
 }
-	
