@@ -1,0 +1,104 @@
+{
+	"info": {
+		"_postman_id": "276f9c0c-989a-4a0c-b147-b8bd02f1e697",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31306582"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/notes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"notes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/UploadForm.html",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/UploadForm.html",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"UploadForm.html"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/upload",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "note1",
+							"value": "11111",
+							"type": "text"
+						},
+						{
+							"key": "note2",
+							"value": "22222",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost:8000/upload"
+			},
+			"response": []
+		},
+		{
+			"name": "/notes/note1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8000/notes/11111"
+			},
+			"response": []
+		},
+		{
+			"name": "/notes/note1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "DD"
+				},
+				"url": "http://localhost:8000/notes/11111"
+			},
+			"response": []
+		},
+		{
+			"name": "/notes/note1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8000/notes/11111"
+			},
+			"response": []
+		}
+	]
+}
+	
