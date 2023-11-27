@@ -7,40 +7,20 @@
 	},
 	"item": [
 		{
-			"name": "New Request",
+			"name": "/notes",
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": {
-					"raw": "http://localhost:8000/notes",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8000",
-					"path": [
-						"notes"
-					]
-				}
+				"url": "http://localhost:8000/notes"
 			},
 			"response": []
 		},
 		{
-			"name": "http://localhost:8000/UploadForm.html",
+			"name": "/UploadForm.html",
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": {
-					"raw": "http://localhost:8000/UploadForm.html",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8000",
-					"path": [
-						"UploadForm.html"
-					]
-				}
+				"url": "http://localhost:8000/UploadForm.html"
 			},
 			"response": []
 		},
@@ -53,13 +33,13 @@
 					"mode": "formdata",
 					"formdata": [
 						{
-							"key": "notename",
-							"value": "goal",
+							"key": "note_name",
+							"value": "Money",
 							"type": "text"
 						},
 						{
-							"key": "notee",
-							"value": "ggg",
+							"key": "note",
+							"value": "GG",
 							"type": "text"
 						}
 					]
@@ -69,16 +49,16 @@
 			"response": []
 		},
 		{
-			"name": "/notes/notename",
+			"name": "/notes/note_name",
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": "http://localhost:8000/notes/goal"
+				"url": "http://localhost:8000/notes/Money"
 			},
 			"response": []
 		},
 		{
-			"name": "/notes/notename",
+			"name": "/notes/note_name",
 			"request": {
 				"method": "PUT",
 				"header": [],
@@ -86,16 +66,16 @@
 					"mode": "raw",
 					"raw": "DD"
 				},
-				"url": "http://localhost:8000/notes/goal"
+				"url": "http://localhost:8000/notes/Money"
 			},
 			"response": []
 		},
 		{
-			"name": "/notes/notename",
+			"name": "/notes/note_name",
 			"request": {
 				"method": "DELETE",
 				"header": [],
-				"url": "http://localhost:8000/notes/goal"
+				"url": "http://localhost:8000/notes/Money"
 			},
 			"response": []
 		}
